@@ -83,7 +83,7 @@ main article .publish-date{
 */
 
 html {
-  background: #ffffff;
+  background: white;
 }
 
 section{
@@ -95,30 +95,30 @@ section{
 }
 
 header, footer{
-  background: #8C8884;
+  background: #BFBFBF;
   text-align: center;
   padding: .8em;
 }
 
 header{
   margin-top: 1vh;
-  border: 1px solid #8C8884;
+  border: 1px solid #BFBFBF;
   border-top-left-radius: .8em;
   border-top-right-radius: .8em;
 }
 
 footer{
   margin-bottom: 1vh;
-  border: 1px solid #8C8884;
+  border: 1px solid #BFBFBF;
   border-bottom-left-radius: .8em;
   border-bottom-right-radius: .8em;
 }
 
 main{
-  border: 1px solid #8C8884;
+  border: 1px solid #BFBFBF;
   border-top-width: 0;
   border-bottom-width: 0;
-  background: hsla(109, 0%, 96%, 1.000)
+  background: white;
 }
 
 header a{
@@ -128,14 +128,14 @@ header a{
 
 header h1{
   margin: 0;
-  font-family: "Arial Black", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 3em;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 header h1 i.fas,
 header h1 i.far{
-  color: rgba(119, 98, 140, 1.000);
+  color: black;
 }
 
 .comic-navigation{
@@ -145,7 +145,7 @@ header h1 i.far{
 .site-navigation li a,
 .comic-navigation li a {
   font-family: "Futura", sans-serif;
-  background: #735D5D;
+  background: #8B8884;
   color: white;
   border-radius: .5em;
   margin-right: 5px;
@@ -170,7 +170,7 @@ header h1 i.far{
 .site-navigation li a[href]:focus,
 .comic-navigation li a[href]:hover,
 .comic-navigation li a[href]:focus{
-  background: hsla(270, 18%, 60%, 1.000);
+  background: #6F5e5d;
   box-shadow: inset 0 0 0px 3px #735D5D;
 }
 
@@ -211,8 +211,8 @@ footer{
 /* Styling for the link to the repo */
 
 .repo-link{
-  background: hsla(336, 94%, 60%, 1.000) !important;
-  box-shadow: inset 0 0 0px 3px hsla(336, 94%, 60%, 1.000) !important;
+  background: #887373 !important;
+  box-shadow: inset 0 0 0px 3px #887373 !important;
   color: white !important;
 }
 
