@@ -83,7 +83,7 @@ main article .publish-date{
 */
 
 html {
-  background: #eeeeee;
+  background: #ffffff;
 }
 
 section{
@@ -95,27 +95,27 @@ section{
 }
 
 header, footer{
-  background: rgba(113, 160, 165, 0.3000);
+  background: #8C8884;
   text-align: center;
   padding: .8em;
 }
 
 header{
   margin-top: 1vh;
-  border: 1px solid rgba(113, 160, 165, 1.000);
+  border: 1px solid #8C8884;
   border-top-left-radius: .8em;
   border-top-right-radius: .8em;
 }
 
 footer{
   margin-bottom: 1vh;
-  border: 1px solid rgba(113, 160, 165, 1.000);
+  border: 1px solid #8C8884;
   border-bottom-left-radius: .8em;
   border-bottom-right-radius: .8em;
 }
 
 main{
-  border: 1px solid rgba(113, 160, 165, 1.000);
+  border: 1px solid #8C8884;
   border-top-width: 0;
   border-bottom-width: 0;
   background: hsla(109, 0%, 96%, 1.000)
@@ -128,7 +128,7 @@ header a{
 
 header h1{
   margin: 0;
-  font-family: "Baskerville Semibold", serif;
+  font-family: "Arial Black", sans-serif;
   font-size: 3em;
   font-weight: bold;
 }
@@ -145,7 +145,7 @@ header h1 i.far{
 .site-navigation li a,
 .comic-navigation li a {
   font-family: "Futura", sans-serif;
-  background: rgba(119, 98, 140, 1.000);
+  background: #735D5D;
   color: white;
   border-radius: .5em;
   margin-right: 5px;
@@ -171,7 +171,7 @@ header h1 i.far{
 .comic-navigation li a[href]:hover,
 .comic-navigation li a[href]:focus{
   background: hsla(270, 18%, 60%, 1.000);
-  box-shadow: inset 0 0 0px 3px rgba(119, 98, 140, 1.000);
+  box-shadow: inset 0 0 0px 3px #735D5D;
 }
 
 .comic-navigation a:not([href]) {
@@ -182,16 +182,16 @@ header h1 i.far{
 
 
 main article{
-  font-family: "Baskerville", serif;
+  font-family: "Arial", sans-serif;
   font-size: 1.3em;
 }
 
 main article a{
-  color: #71a0a5;
+  color: #8C7272;
 }
 
 main article a:visited{
-  color: rgba(119, 98, 140, 1.000);
+  color: #735D5D;
 }
 
 main article h2{
