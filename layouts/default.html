@@ -3,7 +3,7 @@
   <head>
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
     <meta charset="utf-8">
-    <title>Sunday Papers - <%= @item[:title] %></title>
+    <title>Hi-Q: <%= @item[:title] %></title>
     <link rel="stylesheet" href="/stylesheet.css">
 
     <!-- Loaded for icons, feel free to remove it! -->
@@ -18,10 +18,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 
     <!-- Opengraph properties, for rich embeds when sharing (https://ogp.me) -->
-    <meta property="og:title" content="Sunday Papers - <%= @item[:title] %>" />
-    <meta property="article:author" content="Charlie Doe" />
-    <meta property="og:image:alt" content="A comic" />
-    <meta property="article:tag" content="webcomics" />
+    <meta property="og:title" content="Hi-Q: <%= @item[:title] %>" />
+    <meta property="article:author" content="Kyle TM" />
+    <meta property="og:image:alt" content="A haiku" />
+    <meta property="article:tag" content="poetry" />
 
     <meta property="og:type" content="article" />
     <meta property="og:url" content="<%= url_for(item) %>" />
@@ -34,7 +34,7 @@
   <body>
     <section>
       <header>
-        <a href="/"><h1><i class="fas fa-pen-nib fa-xs"></i> Sunday Papers <i class="fas fa-newspaper fa-xs"></i></h1></a>
+        <a href="/"><h1><i class="fas fa-pen fa-xs"></i> Kyle TM <i class="fas fa-signature fa-xs"></i></h1></a>
         <nav class='site-navigation'>
           <ul>
             <li><a href="/"><i class="fas fa-home"></i> Latest</a></li>
@@ -90,8 +90,7 @@
       <footer>
         <!-- For your convenience! -->
         &copy; <%= Date.today.year %>
-        Add your trademark & other info here!
-        <em>Other artists have graciously donated some of their own comics to help make this site feel alive. Please respect their copyrights &amp; and work.</em>
+        Kyle TM
       </footer>
     </section>
   </body>
