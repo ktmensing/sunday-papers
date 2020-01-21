@@ -1,0 +1,21 @@
+---
+title: smoke patterns
+kind: article
+created_at: 2020-01-19
+updated_at: 2020-01-19T16:28:00Z
+preview_image: /pages/011920.jpg
+---
+
+
+<% content_for(:comic) do %>
+  <img src="/pages/011920.jpg">
+<% end %>
+
+
+<% content_for(:newspost) do %>
+  <h2>smoke patterns</h2>
+  <aside class='publish-date'><%= publish_time_tag %> (originally published on <%= publish_time_tag(Date.new(2020, 01, 19)) %>)</aside>
+  <p><em>rorschach baby
+  <br />
+  a rorschach baby</em></p>
+<% end %>
