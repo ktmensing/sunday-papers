@@ -3,11 +3,8 @@
   <head>
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
     <meta charset="utf-8">
-    <title>Kyle TM: <%= @item[:title] %></title>
+    <title>Hi-Q: <%= @item[:title] %></title>
     <link rel="stylesheet" href="/stylesheet.css">
-
-    <!-- Loaded for icons, feel free to remove it! -->
-    <script src="https://kit.fontawesome.com/3270dded95.js" crossorigin="anonymous"></script>
 
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="Sunday Papers (Nanoc <%= Nanoc::VERSION %>)">
@@ -30,24 +27,30 @@
     <% end %>
 
     <meta property="article:published_time" content="<%= item[:created_at] %>" />
+      
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200i,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section>
-      <header>
-        <a href="/"><h1><i class="fas fa-wave-square fa-flip-horizontal fa-xs"></i> kyle tm <i class="fas fa-wave-square fa-xs"></i></h1></a>
-        <nav class='site-navigation'>
-          <ul>
-            <li><a href="/"><i class="fas fa-pen"></i> Latest</a></li>
-            <!-- <li><a href="/archive"><i class="fas fa-history"></i> Archive</a></li> -->
-            <li><a href="https://buttondown.email/hi-q/archive"><i class="fas fa-history"></i> Archive</a></li>
-            <li><a href="feed:<%= @config[:base_url] %>/atom.xml"><i class="fas fa-rss"></i> Feed</a></li>
-              <li><a href="https://buttondown.email/hi-q" target="_blank"><i class="fas fa-envelope"></i> Subscribe</a></li>
-            <li><a class='repo-link' href="https://github.com/tcannonfodder/sunday-papers"><i class="fab fa-github"></i> Make your own!</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
+    <div class="grid">
+   <div class="row">
+    <div class="col-xs">
+      <div class="box header"><h1>Hi<br>-Q</h1></div>
+      <div class="box-short hiq"><h3 class="plex_semi vertical-rl rotate-180">haiku to you</h3>
+        <form
+  action="https://buttondown.email/api/emails/embed-subscribe/hi-q"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/hi-q', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <div class="plex_eli">enter your email</div>
+  <input type="email" name="email" id="bd-email">
+  <input type="hidden" value="1" name="embed"></input>
+  <input type="submit" value="Subscribe"></input>
+</form></div>
+     </div>
+     <div class="col-xs">
+      <div class="box-large"><main>
         <% if item[:non_comic_page] %>
           <%= yield %>
         <% else %>
@@ -88,8 +91,14 @@
             </article>
           <% end %>
         <% end %>
-      </main>
-      <footer>
+      </main></div>
+    </div>
+     <div class="col-xs">
+       <div class="box"><a href="/">that new new</a><br><br><a href="/archive">the past</a><br><br><a href="feed:<%= @config[:base_url] %>/atom.xml">feed me</a></div>
+    </div>
+</div>
+</div>
+
         <!-- For your convenience! -->
         &copy; <%= Date.today.year %>
         Kyle TM
