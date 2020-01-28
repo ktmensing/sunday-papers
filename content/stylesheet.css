@@ -195,7 +195,7 @@ input[type=submit] {
   padding: 5%;
 }
 
-.footer {
+footer {
   font-family: 'IBM Plex Mono', monospace;
   border: 1px solid;
   text-align: center;
