@@ -64,22 +64,22 @@
             <ol>
               <li>
                 <a <% if @config[:first_comic] && @config[:first_comic] != item %> href="<%= @config[:first_comic].identifier.without_ext %>" <% end %>>
-                  <i class="fas fa-fast-backward"></i> First
+                  <<
                 </a>
               </li>
               <li>
                 <a <% if @item[:previous_comic] %> href="<%= @item[:previous_comic].identifier.without_ext %>" <% end %>>
-                  <i class="fas fa-step-backward"></i></i> Previous
+                  <
                 </a>
               </li>
               <li>
                 <a <% if @item[:next_comic] %> href="<%= @item[:next_comic].identifier.without_ext %>" <% end %>>
-                  <i class="fas fa-step-forward"></i> Next
+                  >
                 </a>
               </li>
               <li>
                 <a <% if @config[:last_comic] && @config[:last_comic] != item %> href="<%= @config[:last_comic].identifier.without_ext %>" <% end %>>
-                  <i class="fas fa-fast-forward"></i> Last
+                  >>
                 </a>
               </li>
             </ol>
@@ -94,7 +94,7 @@
       </main></div>
     </div>
      <div class="col-xs">
-       <div class="box"><a href="/">that new new</a><br><br><a href="/archive">the past</a><br><br><a href="feed:<%= @config[:base_url] %>/atom.xml">feed me</a></div>
+       <div class="box"><a href="/">that new new</a><br /><br /><a href="/archive">the past</a><br /><br /><a href="feed:<%= @config[:base_url] %>/atom.xml">feed me</a></div>
     </div>
 </div>
 </div>
